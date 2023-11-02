@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest operator Examples</title>
+</head>
+<body>
+    <script>
+       // function myBio() {
+
+       // }
+       const myBio = (fname, lname, ...otherdata) => {
+        return otherdata;
+       };
+       const showBio = [
+        "Aqdas", 
+        "khan", 
+        "Entry level Developer",
+         22,
+     "0336682898"
+    ];
+       console.log("show Bio...", showBio);
+
+      /* const calculateMarks =(...marks) => {
+           return marks.reduce((total, 1) == total + 1);
+       };
+
+       const totalmarks = calculateMarks[100, 30, 45, 79,49,20];
+       console.log("Total marks...", totalmarks);*/
+    </script>
+</body>
+</html>

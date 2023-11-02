@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Splice</title>
+</head>
+<body>
+    <script>
+        let productsArray = [
+            {name:"Split AC", Price:90000},
+            {name:"Dawlence Fridge", Price:95000},
+            {name:"LED", Price:35000},
+            {name:"Computer", Price:70000},
+        ];
+        let newproduct = {
+            name:"Washing Machine", Price:50000,
+        };
+        productsArray?.splice(3,0,newproduct);
+        console.log("Allproducts...", productsArray);
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combine all methods</title>
+</head>
+<body>
+    <script>
+        let teams = [
+            {id: 1, name:"Aqdas", points:10, isDesigner: true},
+            {id: 2, name:"Sanaila", points:8, isDesigner: true},
+            {id: 3, name:"Areeba", points:6, isDesigner: false},
+            {id: 4, name:"Aimen", points:4, isDesigner: false},
+        ];
+       /* let allBestDesigners = teams?.filter((item) => item.isDesigner);
+        console.log("best designers...", allBestDesigners);
+
+        let bestScore = allBestDesigners?.map((item) => item.points); 
+        console.log("best score...", bestScore);
+
+        let totalBestScore = bestScore?.reduce((acc,item) => acc + item);
+        console.log("total best score...",  totalBestScore);*/
+
+        let totalBestScore = teams?.filter((item) => item.isDesigner)
+        .map((item) => item.points)
+        .reduce((acc, item) => acc + item);
+        console.log("total best score...", totalBestScore);
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+    <script>
+        //Length Method Example
+        let developers = [
+            {
+                name:"Shafiq Khan",
+                experience:"10 years",
+                age:30,
+            },
+            {
+                name:"Sheikh Saqib",
+                experience:"20 years",
+                age:40,
+            },
+            {
+                name:"Hasan",
+                experience:"6 years",
+                age:33,
+            },
+            {
+                name:"Asia",
+                experience:"5 years",
+                age:45,
+            },
+        ];
+        console.log("Developers length",  developers?.length);
+
+        //toString() Method Example
+
+         const subjects = ["Englisg", "Chemistry", "Physics", "Mathematics"];
+         console.log(subjects.toString());
+
+         //join() Method Example
+
+         const fruits = ["Graps", "Mango", "Orange", "Apple"];
+         console.log(fruits.join("Rs "));
+
+         // Pop() Method Example
+         const shoes = ["Slippers", "Heals", "Joggers", "Sandals"];
+         console.log("shoes...",  shoes.pop());
+         console.log("shoes data...", shoes);
+
+         // Push() Method Example
+         const pushExample = ["Slippers", "Heals", "Joggers", "Sandals"];
+         console.log("push Example...",  pushExample.push("Pumps"));
+         console.log("push data...", pushExample);
+         
+         // shift() Method Example
+         const myfruits = ["Graps", "Mango", "Orange", "Apple"];
+          const shiftedfruits = myfruits.shift();
+         console.log(" shifted fruits...", myfruits);
+
+         // changing 
+         console.log("developer...", developers[3]);
+
+          //concate() Method Example
+          const myGirls = ["Rose", "Zarnish", "Mano"];
+          const myBoys  = ["Jack", "Joes", "Anas"];
+          console.log("my children...", myGirls.concat(myBoys));
+
+           //Flat() Method Example
+           const myTableData = [
+           [1, 2],
+           [3, 4],
+           [5, 6],
+           ];
+           const flattenresult = myTableData.flat();
+           console.log("flatten result...", flattenresult);
+
+           //slice() Method Examp
+           const marks = [10, 30, 40, 50, 80];
+           console.log("marks...", marks);
+           //console.log("marks...", marks.slice(1));
+           console.log("marks...", marks.slice(2,3));
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort Method</title>
+</head>
+<body>
+    <script>
+        //------Example 1 0n sort()Method-----
+        /*let carsArray = [
+           {name:"Toyota", model:2005, color:"white"},
+           {name:"GLI", model:2020, color:"blue"},
+           {name:"Suzuki", model:2003, color:"black"},
+           {name:"Aqua", model:2020, color:"purple"}, 
+                  
+        ];
+        const libraries = ["Express", "Vue", "Angular" ];
+
+
+        let newcar = {
+            name:"Ranger Hover", model:2023, color:"red",
+        };
+        const sortedlibraries = libraries?.sort();
+       console.log("sorted libraries...?", sortedlibraries);*/
+
+           //--------Example 2 on sort method--------
+
+           let carsArray = [
+           {name:"Toyota", model:2005, color:"white"},
+           {name:"GLI", model:2020, color:"blue"},
+           {name:"Suzuki", model:2003, color:"black"},
+           {name:"Aqua", model:2020, color:"purple"}, 
+                  
+        ];
+        const Numbers = [78, 50, 100 ];
+
+
+        let newcar = {
+            name:"Ranger Hover", model:2023, color:"red",
+        };
+        carsArray.push(newcar);
+        const sortedNumbers = Numbers?.sort(function(a,b) {
+            return a-b;
+        } );
+
+        //------According to ES6
+       // const sortedNumbers = Numbers?.sort((a,b) => a-b);
+        const sortedcars = carsArray?.sort((a,b) => 
+            a.name.localeCompare(b.name));
+        console.log("sorted Numbers...?", sortedcars);*/
+
+        //----- example of some() Method------
+
+
+       console.log("check if car is present...", carsArray.some((item) => item.name === "GLI"));
+
+            //------Example on Reduce() Function-------
+
+             let shoppingitems =  [
+                {name:"body spray", price:3000, color:"white"},
+                {name:"eye pallete", price:4000, color:"white"},
+                 {name:"laptop", price:100000, color:"Grey"},
+               ];              
+                 const totalPrice= shoppingitems?.reduce((acc,item) => acc + item.price, 0);
+                 console.log("total shopping price...?", totalPrice);
+    </script>
+</body>
+</html>

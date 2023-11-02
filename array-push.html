@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays Push </title>
+</head>
+<body>
+    <script>
+        let personArray = [
+           { name:"Maryam", eyecolor: "black", height:5.3, haircolor:"Brown"},
+           { name:"Hoor", eyecolor: "green", height:5, haircolor:"Brown"},
+           { name:"Nadia", eyecolor: "grey", height:4, haircolor:"yellow"},
+           { name:"Huma", eyecolor: "brown", height:5.6, haircolor:"Black"},
+        ];
+        let newperson = {
+            name:"Aimen Khan", eyecolor: "blue", height:5.5, haircolor:"white",
+        };
+        let anotherperson = {
+            name:"Amal Fatima", eyecolor: "Green", heighgt:5, haircolor:"black",
+        };
+        personArray.push(anotherperson);
+        personArray.push(newperson);
+
+        console.log("Allpersons...", personArray);
+    </script>
+</body>
+</html>
